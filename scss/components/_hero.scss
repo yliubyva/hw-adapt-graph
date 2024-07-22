@@ -1,0 +1,17 @@
+.hero {
+    @extend .container;
+    &__title {
+        font-family: $font-secondary;
+        @include text(30px, 600, $color-secondary, 50px);
+        letter-spacing: 0.05em;
+        margin-bottom: 70px;
+
+        @include media("tablet") {
+            font-size: 33px;
+        }
+
+        @include media("desktop") {
+            font-size: 48px;
+        }
+    }
+}

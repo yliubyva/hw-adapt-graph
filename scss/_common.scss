@@ -8,6 +8,13 @@
   }
 }
 
+body {
+  margin-top: 60px;
+  @include media("desktop") {
+    margin-top: 100px;
+  }
+}
+
 button {
   cursor: pointer;
 }
@@ -17,4 +24,22 @@ input,
 select,
 textarea {
   font-family: inherit;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+li {
+  list-style: none;
 }
