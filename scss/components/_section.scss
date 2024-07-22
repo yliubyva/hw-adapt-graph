@@ -1,0 +1,41 @@
+.section {
+    @extend .container;
+    margin-bottom: 70px;
+    @include media("desktop") {
+        margin-bottom: 90px;
+    }
+    &__title {
+        font-family: $font-secondary;
+        @include text(26px, 600, $color-secondary, 43.16px);
+        letter-spacing: 0.1em;
+        margin-bottom: 40px;
+        @include media("tablet") {
+            font-size: 28px;
+            margin-bottom: 50px;
+        }
+    }
+
+    &__description {
+        font-family: $font-main;
+        @include text(16px, 400, $color-main, 30px);
+        letter-spacing: 0.05em;
+        @include media("tablet") {
+            font-size: 19px;
+        }
+    }
+
+    &__group-description {
+        @include flex(column);
+        gap: 30px;
+        &--project-overview {
+            width: 100%;
+            @include media("desktop") {
+                width: 570px;
+            }
+        }
+    }
+
+    &__image {
+        margin-bottom: 20px;
+    }
+}

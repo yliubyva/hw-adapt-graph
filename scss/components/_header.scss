@@ -1,0 +1,16 @@
+.header {
+    height: 60px;
+    padding: 18px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    @include media("desktop") {
+        height: 100px;
+        padding: 38px 0;
+    }
+    &__container {
+        @extend .container;
+    }
+}
